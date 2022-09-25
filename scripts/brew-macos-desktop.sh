@@ -4,104 +4,69 @@
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
 # daily
-# brew install --cask dropbox
-# brew install --cask gyazo
-brew install --cask 1password
-# brew install --cask rescuetime
-brew install --cask spotify
-# brew install --cask alfred
-brew install --cask zoom
-# brew install --cask twitch
-# brew install --cask avira-antivirus
-# brew install --cask flickr-uploadr
-brew install --cask nordvpn
-brew install --cask istat-menus
-brew install --cask overkill
-brew install --cask time-out
+brew install --cask istat-menus # serial needed
+brew install --cask enpass # subscription needed
+brew install --cask iterm2
+brew install --cask hiddenbar
+brew install --cask keepassx
+brew install --cask raycast
 
 # dev
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
-# brew install --cask alacritty
-# brew install --cask iterm2
-brew install --cask imagealpha
-brew install --cask imageoptim
-# brew install docker-compose
-brew install --cask docker
-# brew install buildpacks/tap/pack
-# brew install --cask cyberduck
-# brew install --cask gitify
 brew install --cask insomnia
-brew install --cask postman
-brew install --cask psequel
-brew install --cask sequel-pro
-brew install --cask db-browser-for-sqlite
-brew install --cask tower
 brew install --cask visual-studio-code
-# brew install TomAnthony/brews/itermocil
-# mkdir ~/.itermocil
+brew install neovim-remote
+brew install --cask gitkraken
+brew install n
+brew install nvm
+brew install yarn
+brew install --cask anaconda
+
+# window management
+brew install koekeishiya/formulae/yabai
+
+# vm
+brew install --cask parallels # serial needed
 
 # networking
-brew install --cask little-snitch
 
 # organize
-# brew install --cask evernote
 
 # social
+brew install --cask thunderbird
 brew install --cask discord
-# brew install --cask riot
 brew install --cask signal
-brew install --cask slack
 brew install --cask telegram
 
 # browsers
 brew install --cask google-chrome
 brew install --cask firefox
-brew install --cask chromium
-brew install --cask tor-browser
+brew install --cask orion
+# brew install --cask chromium
+# brew install --cask tor-browser
+
+# gis/cad
+brew install --cask qgis
+# set light mode
+# osascript -e 'id of app "QGIS"'
+defaults write org.qgis.qgis3 NSRequiresAquaSystemAppearance -bool Yes
 
 # design
-brew install --cask balsamiq-mockups
-brew install --cask xscope
-brew install --cask skyfonts
 
 # writing
-brew install --cask grammarly
+brew install --cask grammarly # requires subscription
 
 # productivity
-# brew install --cask cheatsheet
 echo "No cask available for vimac: https://vimacapp.com/"
 
 # games
-brew install --cask steam
-brew install --cask epic-games
+# brew install --cask steam
+# brew install --cask epic-games
 
 # less often
 brew install --cask disk-inventory-x
-brew install --cask skitch
-brew install --cask screenflow
 brew install --cask vlc
-brew install --cask gpg-tools
-brew install --cask licecap
-brew install --cask air-video-server-hd
-brew install --cask keycastr
-brew install --cask kindle
-brew install --cask name-mangler
-brew install --cask avibrazil-rdm
-brew install --cask teamviewer
-brew install --cask the-unarchiver
-brew install --cask keka
-brew install --cask charles
-brew install --cask daisydisk
-brew install --cask handbrake
-brew install --cask balenaetcher
-
-brew tap homebrew/cask-fonts
-brew install --cask font-fira-code
 
 # Not on cask but I want regardless.
 
-# File Multi Tool 5
-# Phosphor
-# Trello
-# Affinity Photo

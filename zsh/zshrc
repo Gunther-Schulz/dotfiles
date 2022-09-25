@@ -20,7 +20,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-alias 'l=lsd'
+alias 'ls=lsd'
+alias 'l=lsd -al'
 alias 'la=lsd -A'
 alias 'll=lsd -l'
 alias 'lq=lsd -Q'
@@ -30,21 +31,21 @@ alias 'lrt=lsd -lrt'
 alias 'lrta=lsd -lrtA'
 alias 'lrth=lsd -lrth'
 alias 'lrtha=lsd -lrthA'
-alias 'j=jobs -l'
-alias 'tf=tail -F'
-alias 'z=fasd_cd'
-alias 'grep=grep --colour'
-alias 'vnice=nice -n 20 ionice -c 3'
-alias "tree=tree -A -I 'CVS|*~'"
+#alias 'j=jobs -l'
+#alias 'tf=tail -F'
+#alias 'z=fasd_cd'
+#alias 'grep=grep --colour'
+#alias 'vnice=nice -n 20 ionice -c 3'
+#alias "tree=tree -A -I 'CVS|*~'"
 
 # Play safe!
-alias 'rm=rm -i'
-alias 'mv=mv -i'
-alias 'cp=cp -i'
+#alias 'rm=rm -i'
+#alias 'mv=mv -i'
+#alias 'cp=cp -i'
 
 # For convenience
-alias 'mkdir=mkdir -p'
-alias 'dus=du -ms * | sort -n'
+#alias 'mkdir=mkdir -p'
+#alias 'dus=du -ms * | sort -n'
 
 # Put this in your .zshrc or .bashrc file
 # Install `tree` first — brew install tree
@@ -54,26 +55,26 @@ function t() {
   tree -I '.git|node_modules|bower_components|.DS_Store' --dirsfirst --filelimit 100 -L ${1:-3} -aC $2
 }
 
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 
 # export PATH="$HOME/.rbenv/bin:$PATH"
 # [ -f ~/.rbenv/completions/rbenv.zsh ] && source ~/.rbenv/completions/rbenv.zsh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # tabtab source for packages
 # uninstall by removing these lines
-[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+# [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
 
 # MAGIC_ENTER_OTHER_COMMAND='clear && lsd -lha | lolcat -S 1 -F 0.04'
-MAGIC_ENTER_OTHER_COMMAND='clear && lsd -lha'
-MAGIC_ENTER_GIT_COMMAND="clear && git status | lolcat -S 1 -F 0.04"
-[ -f ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh ] && source ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh
-source ~/.dotfiles/submodules/zsh-nvm-auto-switch/zsh-nvm-auto-switch.plugin.zsh
+# MAGIC_ENTER_OTHER_COMMAND='clear && lsd -lha'
+# MAGIC_ENTER_GIT_COMMAND="clear && git status | lolcat -S 1 -F 0.04"
+# [ -f ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh ] && source ~/.dotfiles/zsh/plugins/magic-enter.plugin.zsh
+# source ~/.dotfiles/submodules/zsh-nvm-auto-switch/zsh-nvm-auto-switch.plugin.zsh
 
 # Added by serverless binary installer
-export PATH="$HOME/.serverless/bin:$PATH"
+# export PATH="$HOME/.serverless/bin:$PATH"
 
 # . $(pack completion --shell zsh)
 
@@ -96,19 +97,19 @@ bindkey "^R" history-incremental-pattern-search-backward
 # bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
 
 # pnpm
-export PNPM_HOME="/Users/gambo/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+#export PNPM_HOME="/Users/gambo/Library/pnpm"
+#export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/gambo/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/gambo/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/gambo/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/gambo/opt/anaconda3/bin:$PATH"
+        export PATH="/opt/homebrew/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -116,3 +117,4 @@ unset __conda_setup
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# export PATH="/opt/homebrew/anaconda3/bin:$PATH"  # commented out by conda initialize

@@ -8,9 +8,8 @@ brew upgrade
 
 brew install git
 brew install terminal-notifier
-# brew install android-platform-tools
-brew install itermocil
-brew install mosh
+echo "No cask available for itermocil: https://github.com/TomAnthony/itermocil"
+# brew install mosh
 brew install tmux
 brew install tmuxinator
 brew install m-cli
@@ -20,9 +19,9 @@ brew install mkcert
 brew install nss
 
 # neovim
-brew install --HEAD tree-sitter
-brew install --HEAD luajit
-brew install --HEAD neovim
+# brew install --HEAD tree-sitter
+# brew install --HEAD luajit
+# brew install --HEAD neovim
 
 # search history
 brew install hstr

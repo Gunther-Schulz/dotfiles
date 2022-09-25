@@ -37,13 +37,13 @@ Plug 'mhinz/vim-startify'
 " Plug 'bagrat/vim-buffet'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'itchyny/lightline.vim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'ap/vim-css-color'
 " Plug 'severin-lemaignan/vim-minimap'
 
 "{{ File management }}
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
+" Plug 'nvim-lua/popup.nvim'
+" Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -69,32 +69,32 @@ Plug 'Raimondi/delimitMate'
 
 call plug#end()
 
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained", 
-  highlight = {
-    enable = true,
-  },
-}
-EOF
+" lua <<EOF
+" require'nvim-treesitter.configs'.setup {
+"  ensure_installed = "maintained", 
+"  highlight = {
+"    enable = true,
+"  },
+" }
+" EOF
 
-let g:tokyonight_style = 'night'
-let g:tokyonight_enable_italic = 1
+" let g:tokyonight_style = 'night'
+" let g:tokyonight_enable_italic = 1
 
-colorscheme tokyonight
+" colorscheme tokyonight
 
 " Always show statusline
 " set laststatus=2
-let g:lightline = {
-      \ 'colorscheme': 'tokyonight',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ }
-      \ }
+" let g:lightline = {
+"      \ 'colorscheme': 'tokyonight',
+"      \ 'active': {
+"      \   'left': [ [ 'mode', 'paste' ],
+"      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+"      \ },
+"      \ 'component_function': {
+"      \   'gitbranch': 'FugitiveHead'
+"      \ }
+"      \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ALE
@@ -132,8 +132,8 @@ let g:compe.source.nvim_lsp = v:true
 let g:compe.source.nvim_lua = v:true
 let g:compe.source.vsnip = v:true
 
-lua require'lspconfig'.tsserver.setup{ }
-lua require'lspconfig'.vuels.setup{ }
+" lua require'lspconfig'.tsserver.setup{ }
+" lua require'lspconfig'.vuels.setup{ }
 
 hi LspDiagnosticsVirtualTextError guifg=red gui=bold
 hi LspDiagnosticsVirtualTextWarning guifg=orange gui=bold
