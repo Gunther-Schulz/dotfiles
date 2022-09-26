@@ -13,6 +13,7 @@ echo "No cask available for itermocil: https://github.com/TomAnthony/itermocil"
 brew install tmux
 brew install tmuxinator
 brew install m-cli
+brew install tldr
 
 # trusted certificates for local development
 brew install mkcert

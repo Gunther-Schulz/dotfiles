@@ -50,6 +50,9 @@ ln -s -f $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 ln -s -f $HOME/.dotfiles/submodules/tmux/.tmux.conf $HOME/.tmux.conf
 cp $HOME/.dotfiles/submodules/tmux/.tmux.conf.local $HOME/.tmux.conf.local
 
+echo "Install Xcode command line tools. Confirm popup..."
+xcode-select --install
+
 # symlink thinkvim
 # ln -s -f $HOME/.dotfiles/submodules/ThinkVim $HOME/.config/nvim
 

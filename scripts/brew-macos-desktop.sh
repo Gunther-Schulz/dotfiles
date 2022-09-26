@@ -24,7 +24,8 @@ brew install yarn
 brew install --cask anaconda
 
 # window management
-brew install koekeishiya/formulae/yabai
+# brew install koekeishiya/formulae/yabai
+brew install --cask rectangle
 
 # vm
 brew install --cask parallels # serial needed
