@@ -33,39 +33,39 @@ call plug#begin('~/.vim/plugged')
 "{{ Look & Feel }}
 Plug 'ryanoasis/vim-devicons'
 Plug 'mhinz/vim-startify'
-" Plug 'junegunn/vim-emoji'
-" Plug 'bagrat/vim-buffet'
+Plug 'junegunn/vim-emoji'
+Plug 'bagrat/vim-buffet'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'itchyny/lightline.vim'
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" Plug 'ap/vim-css-color'
-" Plug 'severin-lemaignan/vim-minimap'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'ap/vim-css-color'
+Plug 'severin-lemaignan/vim-minimap'
 
 "{{ File management }}
 " Plug 'nvim-lua/popup.nvim'
 " Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'preservim/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'nvim-telescope/telescope.nvim'
+"Plug 'airblade/vim-gitgutter'
+"Plug 'tpope/vim-fugitive'
+"Plug 'preservim/nerdtree'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "{{ Language Server / Autocomplete }}
-Plug 'neovim/nvim-lspconfig', { 'do': 'yarn global add typescript typescript-language-server vls' }
-Plug 'hrsh7th/vim-vsnip'
-Plug 'hrsh7th/vim-vsnip-integ'
-Plug 'hrsh7th/nvim-compe'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'dense-analysis/ale', { 'do': 'yarn global add eslint_d' }
+"Plug 'neovim/nvim-lspconfig', { 'do': 'yarn global add typescript typescript-language-server vls' }
+"Plug 'hrsh7th/vim-vsnip'
+"Plug 'hrsh7th/vim-vsnip-integ'
+"Plug 'hrsh7th/nvim-compe'
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+"Plug 'dense-analysis/ale', { 'do': 'yarn global add eslint_d' }
 
 "{{ Editing }}
-Plug 'elzr/vim-json'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-" Plug 'jparise/vim-graphql'
-Plug 'j5shi/CommandlineComplete.vim'
-Plug 'Raimondi/delimitMate'
+"Plug 'elzr/vim-json'
+"Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-commentary'
+"Plug 'jparise/vim-graphql'
+"Plug 'j5shi/CommandlineComplete.vim'
+"Plug 'Raimondi/delimitMate'
 
 call plug#end()
 
@@ -177,7 +177,7 @@ nnoremap <F12> <cmd>ALEGoToDefinition<cr>
 vnoremap <F5> <cmd>'<,'>sort<cr>
 
 inoremap <silent><expr> <c-space> compe#complete()
-inoremap <silent><expr> <cr>      compe#confirm('<cr>')
+"inoremap <silent><expr> <cr>      compe#confirm('<cr>')
 
 "{{ Buffers }}
 nnoremap <leader>w <cmd>bd<cr>

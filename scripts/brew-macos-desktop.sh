@@ -10,6 +10,8 @@ brew install --cask iterm2
 brew install --cask hiddenbar
 brew install --cask keepassx
 brew install --cask raycast
+brew install --cask soundsource
+brew install --cask hyper
 
 # dev
 brew tap homebrew/cask-fonts

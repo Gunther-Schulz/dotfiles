@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Creates Alacritty config folder
-mkdir -p .config
-
 # Symlinks config
 ln -s $HOME/.dotfiles/nvim $HOME/.config/nvim
 
